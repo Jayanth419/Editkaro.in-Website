@@ -1,0 +1,68 @@
+/**
+ * About Page Specific Styles
+ *
+ * @format
+ */
+
+.about-page .about-us {
+	padding: 80px 5%; /* Increased padding for more space */
+	background-color: #f1f1f1; /* Light gray background for the About section */
+	text-align: center; /* Center-align text */
+}
+
+.about-page .about-container {
+	max-width: 800px; /* Limit the width of the content */
+	margin: 0 auto; /* Center the container */
+	border: 2px solid #ff6f61; /* Add a border to the container */
+	border-radius: 10px; /* Round the corners */
+	padding: 20px; /* Padding inside the container */
+	background-color: white; /* White background for content contrast */
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.about-page h2 {
+	font-size: 2.5rem; /* Adjust heading size */
+	margin-bottom: 20px; /* Space below heading */
+}
+
+.about-page h3 {
+	font-size: 2rem; /* Adjust subheading size */
+	margin-top: 20px; /* Space above subheading */
+	color: #ff6f61; /* Color for subheadings */
+}
+
+.about-page p {
+	font-size: 1.1rem; /* Adjust paragraph text size */
+	line-height: 1.6; /* Increase line height for readability */
+	margin-bottom: 30px; /* Space below paragraph */
+}
+
+.about-page ul {
+	list-style: none; /* Remove default list styling */
+	padding: 0; /* Remove padding */
+	font-size: 1.1rem; /* Adjust font size for list items */
+}
+
+.about-page ul li {
+	margin-bottom: 10px; /* Space below list items */
+}
+
+/* Footer Styles */
+.footer {
+	padding: 20px;
+	background-color: #333; /* Dark background for footer */
+	color: white; /* White text color */
+	text-align: center; /* Center-align text */
+	position: relative; /* Maintain footer position */
+	height: auto; /* Ensure footer adapts to content height */
+}
+
+.social-links a {
+	color: white; /* White color for social links */
+	margin: 0 10px; /* Space between social links */
+	text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+	text-decoration: underline; /* Underline on hover */
+}

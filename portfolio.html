@@ -1,0 +1,223 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Editkaro.in - Portfolio of Video Editing Works" />
+		<title>Editkaro.in - Portfolio</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="scripts.js"></script>
+	</head>
+	<body class="portfolio-page">
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<div class="logo">
+				<a href="index.html" class="logo-link">Editkaro.in</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main content wrapper -->
+		<div class="main-content">
+			<!-- Portfolio Section with Filters and Search -->
+			<section id="portfolio" class="portfolio">
+				<h2 class="section-title">Our Portfolio</h2>
+
+				<!-- Search bar -->
+				<div class="search-bar">
+					<input
+						type="text"
+						id="portfolioSearch"
+						placeholder="Search videos..."
+						onkeyup="searchPortfolio()" />
+				</div>
+
+				<!-- Filter Controls -->
+				<div class="filter-controls">
+					<button
+						class="filter-btn active"
+						data-category="all"
+						onclick="filterVideos('all')">
+						All
+					</button>
+					<button
+						class="filter-btn"
+						data-category="ads"
+						onclick="filterVideos('ads')">
+						Ads
+					</button>
+					<button
+						class="filter-btn"
+						data-category="gaming"
+						onclick="filterVideos('gaming')">
+						Gaming
+					</button>
+					<button
+						class="filter-btn"
+						data-category="anime"
+						onclick="filterVideos('anime')">
+						Anime
+					</button>
+					<button
+						class="filter-btn"
+						data-category="short-videos"
+						onclick="filterVideos('short-videos')">
+						Short Videos
+					</button>
+					<button
+						class="filter-btn"
+						data-category="long-videos"
+						onclick="filterVideos('long-videos')">
+						Long Videos
+					</button>
+				</div>
+
+				<!-- Portfolio Grid -->
+				<div class="video-grid" id="videoGrid">
+					<!-- Video items -->
+					<div class="video-item" data-category="ads">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/mov_bbb.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">
+							Exciting Ad Campaign: "Beyond the Horizon"
+						</h3>
+						<p class="video-description">
+							This ad showcases our creative approach to storytelling, featuring
+							breathtaking visuals and a compelling narrative that leaves a
+							lasting impression.
+						</p>
+					</div>
+
+					<div class="video-item" data-category="gaming">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/movie.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">High-Energy Gaming Montage</h3>
+						<p class="video-description">
+							A fast-paced montage featuring some of the most epic gaming
+							moments. Our editing expertise captures the excitement and
+							intensity of the gaming world.
+						</p>
+					</div>
+
+					<div class="video-item" data-category="anime">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/mov_bbb.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">Anime Showcase: Vibrant and Dynamic</h3>
+						<p class="video-description">
+							Featuring stunning anime clips with our expert color grading and
+							transitions, this video highlights our work in the anime editing
+							genre.
+						</p>
+					</div>
+
+					<div class="video-item" data-category="short-videos">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/movie.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">
+							Quick Tips: Effective Editing in 60 Seconds
+						</h3>
+						<p class="video-description">
+							A brief video offering quick editing tips to enhance your video
+							content, ideal for creators on the go.
+						</p>
+					</div>
+
+					<div class="video-item" data-category="long-videos">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/mov_bbb.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">
+							In-Depth Tutorial: Mastering Video Editing Techniques
+						</h3>
+						<p class="video-description">
+							A comprehensive tutorial that covers various video editing
+							techniques, perfect for both beginners and advanced editors.
+						</p>
+					</div>
+
+					<div class="video-item" data-category="ads">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/movie.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">Creative Ad for Tech Product Launch</h3>
+						<p class="video-description">
+							A slick, tech-themed ad designed for a product launch. The
+							futuristic effects and sound design make this a standout piece in
+							our portfolio.
+						</p>
+					</div>
+
+					<div class="video-item" data-category="gaming">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/mov_bbb.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">Epic Battle Highlights: Gaming Video</h3>
+						<p class="video-description">
+							This video features thrilling in-game battle highlights edited for
+							a seamless and action-packed experience that gamers love.
+						</p>
+					</div>
+
+					<div class="video-item" data-category="anime">
+						<video width="320" height="240" controls>
+							<source
+								src="https://www.w3schools.com/html/movie.mp4"
+								type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="video-title">Anime Tribute: Stunning Visuals</h3>
+						<p class="video-description">
+							An emotional tribute video featuring popular anime moments. Our
+							edits bring out the beauty and drama of these iconic scenes.
+						</p>
+					</div>
+				</div>
+				<!-- End of Portfolio Grid -->
+			</section>
+		</div>
+		<!-- End of main-content -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+			<div class="social-links">
+				<a href="#">Facebook</a> | <a href="#">Instagram</a> |
+				<a href="#">Twitter</a>
+			</div>
+		</footer>
+	</body>
+</html>
